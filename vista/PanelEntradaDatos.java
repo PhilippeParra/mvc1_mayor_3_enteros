@@ -37,11 +37,16 @@ public class PanelEntradaDatos extends JPanel
         this.setLayout(null);
         this.setBackground(Color.GRAY);
 
+        //Borde y titulo
+        TitledBorder borde = BorderFactory.createTitledBorder("Datos Entrada");
+        borde.setTitleColor(Color.BLUE);
+        this.setBorder(borde);
+
         //Crear y agregar etiqueta para titulo
         LbTitulo = new JLabel("MAYOR DE 3 ENTEROS", JLabel.CENTER);
         LbTitulo.setFont(new Font("Arial", Font.BOLD, 20));
         LbTitulo.setForeground(Color.BLUE);
-        LbTitulo.setBounds(0,0,465,20);
+        LbTitulo.setBounds(0,10,465,20);
         this.add(LbTitulo);
 
         // creacion y adicion de imagen
@@ -53,19 +58,19 @@ public class PanelEntradaDatos extends JPanel
         LbX = new JLabel("X =" , JLabel.RIGHT);
         LbX.setFont(new Font("Arial", Font.BOLD, 25));
         LbX.setForeground(Color.BLACK);
-        LbX.setBounds(40,50,40,40);
+        LbX.setBounds(50,50,40,40);
         this.add(LbX);
 
         LbY = new JLabel("Y =" , JLabel.RIGHT);
         LbY.setFont(new Font("Arial", Font.BOLD, 25));
         LbY.setForeground(Color.BLACK);
-        LbY.setBounds(40,100,40,40);
+        LbY.setBounds(50,100,40,40);
         this.add(LbY);
 
         LbZ = new JLabel("Z =" , JLabel.RIGHT);
         LbZ.setFont(new Font("Arial", Font.BOLD, 25));
         LbZ.setForeground(Color.BLACK);
-        LbZ.setBounds(40,150,40,20);
+        LbZ.setBounds(50,150,40,20);
         this.add(LbZ);
 
         tx = new JTextField();
@@ -84,11 +89,6 @@ public class PanelEntradaDatos extends JPanel
         tz.setBounds(120, 140, 120, 20);
         this.add(tz);
 
-
-        //Borde y titulo
-        TitledBorder borde = BorderFactory.createTitledBorder("Datos Entrada");
-        borde.setTitleColor(Color.BLUE);
-        this.setBorder(borde);
     }
 
     // metodos de acceso a la informacion

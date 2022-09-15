@@ -24,20 +24,20 @@ public class VentanaPrincipal extends JFrame
 
         //Creacion y adicion de un panel tipo PanelEntradaDatos
         miPanelEntradaDatos = new PanelEntradaDatos();
-        miPanelEntradaDatos.setBounds(10,10,465,200);
+        miPanelEntradaDatos.setBounds(10,10,475,210);
         this.add(miPanelEntradaDatos);
 
         miPanelOperaciones = new PanelOperaciones();
-        miPanelOperaciones.setBounds(10,210,465,60);
+        miPanelOperaciones.setBounds(10,225,475,60);
         this.add(miPanelOperaciones);
 
         miPanelResultados = new PanelResultados();
-        miPanelResultados.setBounds(10,260,465,200);
+        miPanelResultados.setBounds(10,290,475,180);
         this.add(miPanelResultados);
 
         // Caracteristicas de la ventana
         this.setTitle("Mayor de 3 enteros");
-        this.setSize(500,500);
+        this.setSize(510,510);
         //this.setLocation(100,100);
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
