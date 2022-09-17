@@ -74,18 +74,18 @@ public class PanelEntradaDatos extends JPanel
         this.add(LbZ);
 
         tx = new JTextField();
-        tx.setFont(new Font("Arial", Font.BOLD, 25));
+        tx.setFont(new Font("Arial", Font.BOLD, 20));
         tx.setBounds(120, 60, 120, 20);
         tx.setForeground(Color.BLACK);
         this.add(tx);
 
         ty = new JTextField();
-        ty.setFont(new Font("Arial", Font.BOLD, 25));
+        ty.setFont(new Font("Arial", Font.BOLD, 20));
         ty.setBounds(120, 100, 120, 20);
         this.add(ty);
 
         tz = new JTextField();
-        tz.setFont(new Font("Arial", Font.BOLD, 25));
+        tz.setFont(new Font("Arial", Font.BOLD, 20));
         tz.setBounds(120, 140, 120, 20);
         this.add(tz);
 

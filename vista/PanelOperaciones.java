@@ -1,8 +1,6 @@
 package vista;
 
 import java.awt.Color;
-import java.awt.Font;
-
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JPanel;
@@ -13,9 +11,9 @@ public class PanelOperaciones extends JPanel
     //-------------------------------
     // Atributos
     //-------------------------------
-    private JButton BMayor;
-    private JButton BBorrar;
-    private JButton BSalir;
+    public JButton BMayor;
+    public JButton BBorrar;
+    public JButton BSalir;
     
     //-------------------------------
     // Metodos
@@ -33,9 +31,9 @@ public class PanelOperaciones extends JPanel
         borde.setTitleColor(Color.BLACK);
         this.setBorder(borde);
         
-        BMayor = new JButton("Mayor");
+        BMayor = new JButton("Hallar Mayor");
         BMayor.setBounds(7, 20, 150, 30);
-        BMayor.setActionCommand("HallarMayor");
+        BMayor.setActionCommand("hallarMayor");
         this.add(BMayor);
 
         BBorrar = new JButton("Borrar");

@@ -28,7 +28,7 @@ public class PanelResultados extends JPanel
         this.setBackground(Color.GRAY);
 
         taResultado = new JTextArea();
-        spResultado = new JScrollPane();
+        spResultado = new JScrollPane(taResultado);
         spResultado.setBounds(10 , 20 , 460, 150);
         this.add(spResultado);
 
@@ -39,6 +39,13 @@ public class PanelResultados extends JPanel
 
         this.setBackground(Color.RED);
     }   
+
+    //metodo de acceso a datos
+    public void mostrarResultado(int mayor)
+    {
+        //taResultado.setText("El numero mayor es: " + mayor);
+        taResultado.append("\nEl numero mayor es: " + mayor);
+    }
 
     //Borrar
 
